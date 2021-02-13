@@ -1,24 +1,51 @@
-# vue-news2
+# News 
 
-## Project setup
-```
-npm install
-```
+## 목차
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- [개요](#개요)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- [기능](#기능)
 
-### Lints and fixes files
-```
-npm run lint
-```
+- [기술 설명](#기술-설명)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+  - [API List](#API-List)
+  - [기술 스택](#기술-스택)
+
+- [기본 개념 정리](#기본-개념-정리)
+
+
+
+## 개요
+
+### 목적
+
+
+
+
+
+## 기능
+
+
+
+
+
+## 기술 설명
+
+###  API List
+
+
+
+### 기술 스택
+
+
+
+
+
+
+
+## 기본 개념 정리
+
+
+
+
+

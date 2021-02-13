@@ -3,6 +3,8 @@ import Vue from 'vue'
 import NewsView from '../views/NewsView.vue';
 import AskView from '../views/AskView.vue';
 import JobsView from '../views/JobsView.vue';
+import UserView from '../views/UserView.vue';
+import ItemView from '../views/ItemView.vue';
 
 
 Vue.use(VueRouter)
@@ -10,6 +12,10 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   mode: 'history',
   routes: [
+    {
+      path: '/',
+      redirect: '/news',
+    },
     {
       path: '/news',
       component: NewsView,
@@ -21,6 +27,14 @@ const router = new VueRouter({
     {
       path: '/jobs',
       component: JobsView,
+    },
+    {
+      path: '/user/:id',
+      component: UserView,
+    },
+    {
+      path: '/item/:id',
+      component: ItemView,
     },
   ]
 });
