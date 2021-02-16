@@ -18,9 +18,22 @@ export default {
 </script>
 
 <style>
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
 body {
   padding: 0;
   margin: 0;
+}
+
+a {
+  color: rgb(56, 56, 56);
+}
+
+a:hover {
+  color: #42b883;
+  text-decoration: underline;
 }
 
 .fade-enter-active, .fade-leave-active {
