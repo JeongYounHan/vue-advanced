@@ -11,7 +11,7 @@
 import UserProfile from '../components/UserProfile.vue'
 
 export default {
-  components: {
+  components: { 
     UserProfile,
   },
   computed: {
