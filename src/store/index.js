@@ -45,6 +45,7 @@ export const store = new Vuex.Store({
       fetchNewsList()
         .then(res => {
           context.commit('SET_NEWS', res.data);
+          return res;
         })
         .catch(err => {
           console.log(err);

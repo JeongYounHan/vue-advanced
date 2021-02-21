@@ -9,7 +9,12 @@ import ListItem from '../components/ListItem.vue'
 
 export default {
   components: {
-    ListItem
+    ListItem,
+
+  },
+  created() {
+    
+    
   }
 }
 </script>

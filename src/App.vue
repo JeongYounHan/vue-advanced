@@ -4,7 +4,7 @@
     <transition name="fade">
       <router-view></router-view>
     </transition>
-    <spinner :loading="true"></spinner>
+    <spinner :loading="loadingStatus"></spinner>
   </div>
 </template>
 <script>
@@ -33,6 +33,11 @@ export default {
   },
   created() {
     bus.$on('start:spinner', this.startSpinner);
+    bus.$on('end:spinner', this.endSpinner);
+  },
+  beforeDestroy() {
+    bus.$off('start:spinner', this.startSpinner);
+    bus.$off('end:spinner', this.endSpinner);
   }
 };
 </script>
