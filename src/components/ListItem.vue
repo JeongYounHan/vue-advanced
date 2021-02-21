@@ -16,39 +16,40 @@
 </template>
 
 <script>
-import bus from '../utils/bus.js'
+// import bus from '../utils/bus.js'
 
 export default {
   computed: {
     listItems() {
-      const name = this.$route.name;
-      if (name === 'news') {
-        return this.$store.state.news;
-      } else if (name === 'ask') {
-        return this.$store.state.asks;
-      } else if (name === 'jobs') {
-        return this.$store.state.jobs;
-      }
-      return this.$store.state.news;
+      return this.$store.state.list;
+      // const name = this.$route.name;
+      // if (name === 'news') {
+      //   return this.$store.state.news;
+      // } else if (name === 'ask') {
+      //   return this.$store.state.asks;
+      // } else if (name === 'jobs') {
+      //   return this.$store.state.jobs;
+      // }
+      // return this.$store.state.news;
     }
   },
   created() {
-    const name = this.$route.name;
-    if (name === 'news') {
-      bus.$emit('start:spinner');
-      setTimeout(() => {
-        this.$store.dispatch('FETCH_NEWS')
-          .then(() => {
-            console.log('fetched');
-            bus.$emit('end:spinner');
-          })
-          .catch((err) => console.log(err));
-      }, 1000);
-    } else if (name === 'ask') {
-      this.$store.dispatch('FETCH_ASKS');
-    } else if (name === 'jobs') {
-      this.$store.dispatch('FETCH_JOBS');
-    }
+    // const name = this.$route.name;
+    // if (name === 'news') {
+    //   bus.$emit('start:spinner');
+    //   setTimeout(() => {
+    //     this.$store.dispatch('FETCH_NEWS')
+    //       .then(() => {
+    //         console.log('fetched');
+    //         bus.$emit('end:spinner');
+    //       })
+    //       .catch((err) => console.log(err));
+    //   }, 1000);
+    // } else if (name === 'ask') {
+    //   this.$store.dispatch('FETCH_ASKS');
+    // } else if (name === 'jobs') {
+    //   this.$store.dispatch('FETCH_JOBS');
+    // }
 
   }
 }
