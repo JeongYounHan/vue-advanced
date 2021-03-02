@@ -17,8 +17,10 @@
 
 <script>
 // import bus from '../utils/bus.js'
+import ListMixin from '../mixins/ListMixin.js';
 
 export default {
+  mixins: [ListMixin],
   computed: {
     listItems() {
       return this.$store.state.list;
@@ -33,7 +35,7 @@ export default {
       // return this.$store.state.news;
     }
   },
-  created() {
+  // created() {
     // const name = this.$route.name;
     // if (name === 'news') {
     //   bus.$emit('start:spinner');
@@ -51,7 +53,7 @@ export default {
     //   this.$store.dispatch('FETCH_JOBS');
     // }
 
-  }
+  // }
 }
 </script>
 
