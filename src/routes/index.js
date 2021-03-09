@@ -7,7 +7,11 @@ import UserView from '../views/UserView.vue';
 import ItemView from '../views/ItemView.vue';
 // import createListView from '../views/CreateListView.js';
 import bus from '../utils/bus.js';
-import { store } from '../store/index.js'
+import { store } from '../store/index.js';
+
+import Common from '../views/designPattern/Common';
+import Slot from '../views/designPattern/Slot';
+
 
 Vue.use(VueRouter)
 
@@ -68,6 +72,14 @@ const router = new VueRouter({
     {
       path: '/item/:id',
       component: ItemView,
+    },
+    {
+      path: '/common',
+      component: Common,
+    },
+    {
+      path: '/slot',
+      component: Slot,
     },
   ]
 });
