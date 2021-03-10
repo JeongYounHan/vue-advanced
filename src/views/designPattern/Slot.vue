@@ -8,7 +8,7 @@
       <item>아이템1</item> 
       <item>
         아이템2 
-        <button>Click</button>
+        <button @click="heyYou">Click</button>
       </item>
       <item>
         <div>
@@ -32,6 +32,11 @@ export default {
     Item,
     Button,
   },
+  methods: {
+    heyYou() {
+      alert('fffffffffffff')
+    }
+  }
 }
 </script>
 
