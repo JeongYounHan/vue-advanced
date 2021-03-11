@@ -11,7 +11,7 @@ import { store } from '../store/index.js';
 
 import Common from '../views/designPattern/Common';
 import Slot from '../views/designPattern/Slot';
-
+import Controlled from '../views/designPattern/Controlled'
 
 Vue.use(VueRouter)
 
@@ -80,6 +80,10 @@ const router = new VueRouter({
     {
       path: '/slot',
       component: Slot,
+    },
+    {
+      path: '/controlled',
+      component: Controlled,
     },
   ]
 });
