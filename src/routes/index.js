@@ -12,6 +12,7 @@ import { store } from '../store/index.js';
 import Common from '../views/designPattern/Common';
 import Slot from '../views/designPattern/Slot';
 import Controlled from '../views/designPattern/Controlled'
+import Renderless from '../views/designPattern/Renderless'
 
 Vue.use(VueRouter)
 
@@ -84,6 +85,10 @@ const router = new VueRouter({
     {
       path: '/controlled',
       component: Controlled,
+    },
+    {
+      path: '/renderless',
+      component: Renderless,
     },
   ]
 });
