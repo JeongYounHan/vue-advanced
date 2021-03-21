@@ -34,6 +34,8 @@ export default {
   created() {
     bus.$on('start:spinner', this.startSpinner);
     bus.$on('end:spinner', this.endSpinner);
+    // .env 파일
+    console.log(`된다는데 왜 안될깜 ${process.env.APP_TITLE}`);
   },
   beforeDestroy() {
     bus.$off('start:spinner', this.startSpinner);
